@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Rp_ListadoCanjesdePremios" msprop:Generator_TableClassName="Rp_ListadoCanjesdePremiosDataTable" msprop:Generator_TableVarName="tableRp_ListadoCanjesdePremios" msprop:Generator_TablePropName="Rp_ListadoCanjesdePremios" msprop:Generator_RowDeletingName="Rp_ListadoCanjesdePremiosRowDeleting" msprop:Generator_RowChangingName="Rp_ListadoCanjesdePremiosRowChanging" msprop:Generator_RowEvHandlerName="Rp_ListadoCanjesdePremiosRowChangeEventHandler" msprop:Generator_RowDeletedName="Rp_ListadoCanjesdePremiosRowDeleted" msprop:Generator_UserTableName="Rp_ListadoCanjesdePremios" msprop:Generator_RowChangedName="Rp_ListadoCanjesdePremiosRowChanged" msprop:Generator_RowEvArgName="Rp_ListadoCanjesdePremiosRowChangeEvent" msprop:Generator_RowClassName="Rp_ListadoCanjesdePremiosRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nombre_usuario" msprop:Generator_ColumnVarNameInTable="columnnombre_usuario" msprop:Generator_ColumnPropNameInRow="nombre_usuario" msprop:Generator_ColumnPropNameInTable="nombre_usuarioColumn" msprop:Generator_UserColumnName="nombre_usuario" type="xs:string" minOccurs="0" />
+              <xs:element name="descripcion" msprop:Generator_ColumnVarNameInTable="columndescripcion" msprop:Generator_ColumnPropNameInRow="descripcion" msprop:Generator_ColumnPropNameInTable="descripcionColumn" msprop:Generator_UserColumnName="descripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="puntos_usados" msprop:Generator_ColumnVarNameInTable="columnpuntos_usados" msprop:Generator_ColumnPropNameInRow="puntos_usados" msprop:Generator_ColumnPropNameInTable="puntos_usadosColumn" msprop:Generator_UserColumnName="puntos_usados" type="xs:int" minOccurs="0" />
+              <xs:element name="fecha" msprop:Generator_ColumnVarNameInTable="columnfecha" msprop:Generator_ColumnPropNameInRow="fecha" msprop:Generator_ColumnPropNameInTable="fechaColumn" msprop:Generator_UserColumnName="fecha" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Rp_ListadodePremios" msprop:Generator_TableClassName="Rp_ListadodePremiosDataTable" msprop:Generator_TableVarName="tableRp_ListadodePremios" msprop:Generator_TablePropName="Rp_ListadodePremios" msprop:Generator_RowDeletingName="Rp_ListadodePremiosRowDeleting" msprop:Generator_RowChangingName="Rp_ListadodePremiosRowChanging" msprop:Generator_RowEvHandlerName="Rp_ListadodePremiosRowChangeEventHandler" msprop:Generator_RowDeletedName="Rp_ListadodePremiosRowDeleted" msprop:Generator_UserTableName="Rp_ListadodePremios" msprop:Generator_RowChangedName="Rp_ListadodePremiosRowChanged" msprop:Generator_RowEvArgName="Rp_ListadodePremiosRowChangeEvent" msprop:Generator_RowClassName="Rp_ListadodePremiosRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="codigo" msprop:Generator_ColumnVarNameInTable="columncodigo" msprop:Generator_ColumnPropNameInRow="codigo" msprop:Generator_ColumnPropNameInTable="codigoColumn" msprop:Generator_UserColumnName="codigo" type="xs:short" minOccurs="0" />
+              <xs:element name="nombre" msprop:Generator_ColumnVarNameInTable="columnnombre" msprop:Generator_ColumnPropNameInRow="nombre" msprop:Generator_ColumnPropNameInTable="nombreColumn" msprop:Generator_UserColumnName="nombre" type="xs:string" minOccurs="0" />
+              <xs:element name="descripcion" msprop:Generator_ColumnVarNameInTable="columndescripcion" msprop:Generator_ColumnPropNameInRow="descripcion" msprop:Generator_ColumnPropNameInTable="descripcionColumn" msprop:Generator_UserColumnName="descripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="puntos_req_actual" msprop:Generator_ColumnVarNameInTable="columnpuntos_req_actual" msprop:Generator_ColumnPropNameInRow="puntos_req_actual" msprop:Generator_ColumnPropNameInTable="puntos_req_actualColumn" msprop:Generator_UserColumnName="puntos_req_actual" type="xs:short" minOccurs="0" />
+              <xs:element name="stock" msprop:Generator_ColumnVarNameInTable="columnstock" msprop:Generator_ColumnPropNameInRow="stock" msprop:Generator_ColumnPropNameInTable="stockColumn" msprop:Generator_UserColumnName="stock" type="xs:short" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

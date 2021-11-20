@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Rp_Cuentas" msprop:Generator_TableClassName="Rp_CuentasDataTable" msprop:Generator_TableVarName="tableRp_Cuentas" msprop:Generator_TablePropName="Rp_Cuentas" msprop:Generator_RowDeletingName="Rp_CuentasRowDeleting" msprop:Generator_RowChangingName="Rp_CuentasRowChanging" msprop:Generator_RowEvHandlerName="Rp_CuentasRowChangeEventHandler" msprop:Generator_RowDeletedName="Rp_CuentasRowDeleted" msprop:Generator_UserTableName="Rp_Cuentas" msprop:Generator_RowChangedName="Rp_CuentasRowChanged" msprop:Generator_RowEvArgName="Rp_CuentasRowChangeEvent" msprop:Generator_RowClassName="Rp_CuentasRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_usuario" msprop:Generator_ColumnVarNameInTable="columnid_usuario" msprop:Generator_ColumnPropNameInRow="id_usuario" msprop:Generator_ColumnPropNameInTable="id_usuarioColumn" msprop:Generator_UserColumnName="id_usuario" type="xs:short" minOccurs="0" />
+              <xs:element name="simbolo" msprop:Generator_ColumnVarNameInTable="columnsimbolo" msprop:Generator_ColumnPropNameInRow="simbolo" msprop:Generator_ColumnPropNameInTable="simboloColumn" msprop:Generator_UserColumnName="simbolo" type="xs:string" minOccurs="0" />
+              <xs:element name="saldo" msprop:Generator_ColumnVarNameInTable="columnsaldo" msprop:Generator_ColumnPropNameInRow="saldo" msprop:Generator_ColumnPropNameInTable="saldoColumn" msprop:Generator_UserColumnName="saldo" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Rp_UsuariosxCuentas" msprop:Generator_TableClassName="Rp_UsuariosxCuentasDataTable" msprop:Generator_TableVarName="tableRp_UsuariosxCuentas" msprop:Generator_RowChangedName="Rp_UsuariosxCuentasRowChanged" msprop:Generator_TablePropName="Rp_UsuariosxCuentas" msprop:Generator_RowDeletingName="Rp_UsuariosxCuentasRowDeleting" msprop:Generator_RowChangingName="Rp_UsuariosxCuentasRowChanging" msprop:Generator_RowEvHandlerName="Rp_UsuariosxCuentasRowChangeEventHandler" msprop:Generator_RowDeletedName="Rp_UsuariosxCuentasRowDeleted" msprop:Generator_RowClassName="Rp_UsuariosxCuentasRow" msprop:Generator_UserTableName="Rp_UsuariosxCuentas" msprop:Generator_RowEvArgName="Rp_UsuariosxCuentasRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_usuario" msprop:Generator_ColumnVarNameInTable="columnid_usuario" msprop:Generator_ColumnPropNameInRow="id_usuario" msprop:Generator_ColumnPropNameInTable="id_usuarioColumn" msprop:Generator_UserColumnName="id_usuario" type="xs:string" minOccurs="0" />
+              <xs:element name="tipo_cuenta" msprop:Generator_ColumnVarNameInTable="columntipo_cuenta" msprop:Generator_ColumnPropNameInRow="tipo_cuenta" msprop:Generator_ColumnPropNameInTable="tipo_cuentaColumn" msprop:Generator_UserColumnName="tipo_cuenta" type="xs:string" minOccurs="0" />
+              <xs:element name="DataColumn1" msprop:Generator_ColumnVarNameInTable="columnDataColumn1" msprop:Generator_ColumnPropNameInRow="DataColumn1" msprop:Generator_ColumnPropNameInTable="DataColumn1Column" msprop:Generator_UserColumnName="DataColumn1" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Rp_CuentasxSaldos" msprop:Generator_TableClassName="Rp_CuentasxSaldosDataTable" msprop:Generator_TableVarName="tableRp_CuentasxSaldos" msprop:Generator_TablePropName="Rp_CuentasxSaldos" msprop:Generator_RowDeletingName="Rp_CuentasxSaldosRowDeleting" msprop:Generator_RowChangingName="Rp_CuentasxSaldosRowChanging" msprop:Generator_RowEvHandlerName="Rp_CuentasxSaldosRowChangeEventHandler" msprop:Generator_RowDeletedName="Rp_CuentasxSaldosRowDeleted" msprop:Generator_UserTableName="Rp_CuentasxSaldos" msprop:Generator_RowChangedName="Rp_CuentasxSaldosRowChanged" msprop:Generator_RowEvArgName="Rp_CuentasxSaldosRowChangeEvent" msprop:Generator_RowClassName="Rp_CuentasxSaldosRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="numero" msprop:Generator_ColumnVarNameInTable="columnnumero" msprop:Generator_ColumnPropNameInRow="numero" msprop:Generator_ColumnPropNameInTable="numeroColumn" msprop:Generator_UserColumnName="numero" type="xs:short" minOccurs="0" />
+              <xs:element name="tipo_cuenta" msprop:Generator_ColumnVarNameInTable="columntipo_cuenta" msprop:Generator_ColumnPropNameInRow="tipo_cuenta" msprop:Generator_ColumnPropNameInTable="tipo_cuentaColumn" msprop:Generator_UserColumnName="tipo_cuenta" type="xs:string" minOccurs="0" />
+              <xs:element name="id_usuario" msprop:Generator_ColumnVarNameInTable="columnid_usuario" msprop:Generator_ColumnPropNameInRow="id_usuario" msprop:Generator_ColumnPropNameInTable="id_usuarioColumn" msprop:Generator_UserColumnName="id_usuario" type="xs:short" minOccurs="0" />
+              <xs:element name="nombre_usuario" msprop:Generator_ColumnVarNameInTable="columnnombre_usuario" msprop:Generator_ColumnPropNameInRow="nombre_usuario" msprop:Generator_ColumnPropNameInTable="nombre_usuarioColumn" msprop:Generator_UserColumnName="nombre_usuario" type="xs:string" minOccurs="0" />
+              <xs:element name="apellido" msprop:Generator_ColumnVarNameInTable="columnapellido" msprop:Generator_ColumnPropNameInRow="apellido" msprop:Generator_ColumnPropNameInTable="apellidoColumn" msprop:Generator_UserColumnName="apellido" type="xs:string" minOccurs="0" />
+              <xs:element name="id_moneda" msprop:Generator_ColumnVarNameInTable="columnid_moneda" msprop:Generator_ColumnPropNameInRow="id_moneda" msprop:Generator_ColumnPropNameInTable="id_monedaColumn" msprop:Generator_UserColumnName="id_moneda" type="xs:string" minOccurs="0" />
+              <xs:element name="saldo" msprop:Generator_ColumnVarNameInTable="columnsaldo" msprop:Generator_ColumnPropNameInRow="saldo" msprop:Generator_ColumnPropNameInTable="saldoColumn" msprop:Generator_UserColumnName="saldo" type="xs:long" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

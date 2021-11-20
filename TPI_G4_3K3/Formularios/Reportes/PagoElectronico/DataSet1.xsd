@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Rp_PagosElectronicos" msprop:Generator_TableClassName="Rp_PagosElectronicosDataTable" msprop:Generator_TableVarName="tableRp_PagosElectronicos" msprop:Generator_RowChangedName="Rp_PagosElectronicosRowChanged" msprop:Generator_TablePropName="Rp_PagosElectronicos" msprop:Generator_RowDeletingName="Rp_PagosElectronicosRowDeleting" msprop:Generator_RowChangingName="Rp_PagosElectronicosRowChanging" msprop:Generator_RowEvHandlerName="Rp_PagosElectronicosRowChangeEventHandler" msprop:Generator_RowDeletedName="Rp_PagosElectronicosRowDeleted" msprop:Generator_RowClassName="Rp_PagosElectronicosRow" msprop:Generator_UserTableName="Rp_PagosElectronicos" msprop:Generator_RowEvArgName="Rp_PagosElectronicosRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:short" minOccurs="0" />
+              <xs:element name="cuenta_origen" msprop:Generator_ColumnVarNameInTable="columncuenta_origen" msprop:Generator_ColumnPropNameInRow="cuenta_origen" msprop:Generator_ColumnPropNameInTable="cuenta_origenColumn" msprop:Generator_UserColumnName="cuenta_origen" type="xs:short" minOccurs="0" />
+              <xs:element name="fecha" msprop:Generator_ColumnVarNameInTable="columnfecha" msprop:Generator_ColumnPropNameInRow="fecha" msprop:Generator_ColumnPropNameInTable="fechaColumn" msprop:Generator_UserColumnName="fecha" type="xs:string" minOccurs="0" />
+              <xs:element name="importe" msprop:Generator_ColumnVarNameInTable="columnimporte" msprop:Generator_ColumnPropNameInRow="importe" msprop:Generator_ColumnPropNameInTable="importeColumn" msprop:Generator_UserColumnName="importe" type="xs:double" minOccurs="0" />
+              <xs:element name="puntos_sumados" msprop:Generator_ColumnVarNameInTable="columnpuntos_sumados" msprop:Generator_ColumnPropNameInRow="puntos_sumados" msprop:Generator_ColumnPropNameInTable="puntos_sumadosColumn" msprop:Generator_UserColumnName="puntos_sumados" type="xs:short" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Rp_PagElec2" msprop:Generator_TableClassName="Rp_PagElec2DataTable" msprop:Generator_TableVarName="tableRp_PagElec2" msprop:Generator_RowChangedName="Rp_PagElec2RowChanged" msprop:Generator_TablePropName="Rp_PagElec2" msprop:Generator_RowDeletingName="Rp_PagElec2RowDeleting" msprop:Generator_RowChangingName="Rp_PagElec2RowChanging" msprop:Generator_RowEvHandlerName="Rp_PagElec2RowChangeEventHandler" msprop:Generator_RowDeletedName="Rp_PagElec2RowDeleted" msprop:Generator_RowClassName="Rp_PagElec2Row" msprop:Generator_UserTableName="Rp_PagElec2" msprop:Generator_RowEvArgName="Rp_PagElec2RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" minOccurs="0" />
+              <xs:element name="id_tipo_operacion" msprop:Generator_ColumnVarNameInTable="columnid_tipo_operacion" msprop:Generator_ColumnPropNameInRow="id_tipo_operacion" msprop:Generator_ColumnPropNameInTable="id_tipo_operacionColumn" msprop:Generator_UserColumnName="id_tipo_operacion" type="xs:int" minOccurs="0" />
+              <xs:element name="importe" msprop:Generator_ColumnVarNameInTable="columnimporte" msprop:Generator_ColumnPropNameInRow="importe" msprop:Generator_ColumnPropNameInTable="importeColumn" msprop:Generator_UserColumnName="importe" type="xs:double" minOccurs="0" />
+              <xs:element name="nombre" msprop:Generator_ColumnVarNameInTable="columnnombre" msprop:Generator_ColumnPropNameInRow="nombre" msprop:Generator_ColumnPropNameInTable="nombreColumn" msprop:Generator_UserColumnName="nombre" type="xs:string" minOccurs="0" />
+              <xs:element name="puntos_sumados" msprop:Generator_ColumnVarNameInTable="columnpuntos_sumados" msprop:Generator_ColumnPropNameInRow="puntos_sumados" msprop:Generator_ColumnPropNameInTable="puntos_sumadosColumn" msprop:Generator_UserColumnName="puntos_sumados" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
