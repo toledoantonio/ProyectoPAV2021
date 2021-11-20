@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankApp", "BankApp.csproj", "{6822F50A-7900-42D9-B620-7C0591CA48C9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6822F50A-7900-42D9-B620-7C0591CA48C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6822F50A-7900-42D9-B620-7C0591CA48C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6822F50A-7900-42D9-B620-7C0591CA48C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6822F50A-7900-42D9-B620-7C0591CA48C9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5A9FB283-64A3-4CE7-B778-BE8014634E4E}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dev.azure.com/facueschoyez
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = BankApp.csproj
+		SccLocalPath1 = .
+	EndGlobalSection
+EndGlobal

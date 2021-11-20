@@ -1,0 +1,1067 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6822F50A-7900-42D9-B620-7C0591CA48C9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BankApp</RootNamespace>
+    <AssemblyName>BankApp</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.SqlServer.Types.14.0.1016.290\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clases\BE_Acceso_Datos.cs" />
+    <Compile Include="Clases\ComboBox01.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Clases\Grid01.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Clases\LabelText.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Clases\LabelText.Designer.cs">
+      <DependentUpon>LabelText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clases\TratamientosEspeciales.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Ayuda\Frm_ayuda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Ayuda\Frm_ayuda.Designer.cs">
+      <DependentUpon>Frm_ayuda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Cotizaciones\Frm_Cotizaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Cotizaciones\Frm_Cotizaciones.Designer.cs">
+      <DependentUpon>Frm_Cotizaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Cotizaciones\Frm_Cotizaciones_Alta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Cotizaciones\Frm_Cotizaciones_Alta.Designer.cs">
+      <DependentUpon>Frm_Cotizaciones_Alta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Cotizaciones\Frm_Cotizaciones_Modificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Cotizaciones\Frm_Cotizaciones_Modificar.Designer.cs">
+      <DependentUpon>Frm_Cotizaciones_Modificar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Cuentas\Frm_Cuentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Cuentas\Frm_Cuentas.Designer.cs">
+      <DependentUpon>Frm_Cuentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Cotizaciones\Frm_ABM_Cotizaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Cotizaciones\Frm_ABM_Cotizaciones.Designer.cs">
+      <DependentUpon>Frm_ABM_Cotizaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Cuentas\Frm_ABM_Cuentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Cuentas\Frm_ABM_Cuentas.Designer.cs">
+      <DependentUpon>Frm_ABM_Cuentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Cuentas\Frm_Cuentas_Alta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Cuentas\Frm_Cuentas_Alta.Designer.cs">
+      <DependentUpon>Frm_Cuentas_Alta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Cuentas\Frm_Cuentas_Borrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Cuentas\Frm_Cuentas_Borrar.Designer.cs">
+      <DependentUpon>Frm_Cuentas_Borrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Cuentas\Frm_Cuentas_Modificacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Cuentas\Frm_Cuentas_Modificacion.Designer.cs">
+      <DependentUpon>Frm_Cuentas_Modificacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmBase\Frm_Base.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmBase\Frm_Base.Designer.cs">
+      <DependentUpon>Frm_Base.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmBase\Frm_Base_ABM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmBase\Frm_Base_ABM.Designer.cs">
+      <DependentUpon>Frm_Base_ABM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Cotizaciones\Frm_Cotizaciones_Baja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Cotizaciones\Frm_Cotizaciones_Baja.Designer.cs">
+      <DependentUpon>Frm_Cotizaciones_Baja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\GraficosEstadisticos\Canjes\Frm_EstadisticasCanjes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\GraficosEstadisticos\Canjes\Frm_EstadisticasCanjes.Designer.cs">
+      <DependentUpon>Frm_EstadisticasCanjes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\GraficosEstadisticos\Canjes\Graf_Estadisticos_Canjes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Graf_Estadisticos_Canjes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\GraficosEstadisticos\Cuentas\Frm_EstadisticasCuentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\GraficosEstadisticos\Cuentas\Frm_EstadisticasCuentas.Designer.cs">
+      <DependentUpon>Frm_EstadisticasCuentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\GraficosEstadisticos\Cuentas\Graf_Estadisticos_Cuentas.cs">
+      <DependentUpon>Graf_Estadisticos_Cuentas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\GraficosEstadisticos\Cuentas\Graf_Estadisticos_Cuentas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Graf_Estadisticos_Cuentas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\GraficosEstadisticos\PagosElectronicos\Frm_EstadisticasPagosElectronicos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\GraficosEstadisticos\PagosElectronicos\Frm_EstadisticasPagosElectronicos.Designer.cs">
+      <DependentUpon>Frm_EstadisticasPagosElectronicos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\GraficosEstadisticos\PagosElectronicos\Graf_EstadisticosPagosElectronicos.cs">
+      <DependentUpon>Graf_EstadisticosPagosElectronicos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\GraficosEstadisticos\PagosElectronicos\Graf_EstadisticosPagosElectronicos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Graf_EstadisticosPagosElectronicos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\GraficosEstadisticos\Transferencias\Frm_Estadisticas_Transferencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\GraficosEstadisticos\Transferencias\Frm_Estadisticas_Transferencias.Designer.cs">
+      <DependentUpon>Frm_Estadisticas_Transferencias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\GraficosEstadisticos\Transferencias\Graf_Estadisticos_Transferencias.cs">
+      <DependentUpon>Graf_Estadisticos_Transferencias.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\GraficosEstadisticos\Transferencias\Graf_Estadisticos_Transferencias.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Graf_Estadisticos_Transferencias.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\GraficosEstadisticos\Usuarios\Frm_EstadisticasUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\GraficosEstadisticos\Usuarios\Frm_EstadisticasUsuarios.Designer.cs">
+      <DependentUpon>Frm_EstadisticasUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\GraficosEstadisticos\Usuarios\Graf_Estadisticos_Usuarios1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Graf_Estadisticos_Usuarios.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\InicioSistema\Frm_Escritorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\InicioSistema\Frm_Escritorio.Designer.cs">
+      <DependentUpon>Frm_Escritorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Monedas\Frm_ABM_Monedas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Monedas\Frm_ABM_Monedas.Designer.cs">
+      <DependentUpon>Frm_ABM_Monedas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Monedas\Frm_Monedas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Monedas\Frm_Monedas.Designer.cs">
+      <DependentUpon>Frm_Monedas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Monedas\Frm_Monedas_Alta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Monedas\Frm_Monedas_Alta.Designer.cs">
+      <DependentUpon>Frm_Monedas_Alta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Monedas\Frm_Monedas_Borrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Monedas\Frm_Monedas_Borrar.Designer.cs">
+      <DependentUpon>Frm_Monedas_Borrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Monedas\Frm_Monedas_Modificaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Monedas\Frm_Monedas_Modificaciones.Designer.cs">
+      <DependentUpon>Frm_Monedas_Modificaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Premios\Frm_ABM_Premios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Premios\Frm_ABM_Premios.Designer.cs">
+      <DependentUpon>Frm_ABM_Premios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Premios\Frm_Premios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Premios\Frm_Premios.Designer.cs">
+      <DependentUpon>Frm_Premios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Premios\Frm_Premios_Alta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Premios\Frm_Premios_Alta.Designer.cs">
+      <DependentUpon>Frm_Premios_Alta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Premios\Frm_Premios_Borrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Premios\Frm_Premios_Borrar.Designer.cs">
+      <DependentUpon>Frm_Premios_Borrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Premios\Frm_Premios_Modificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Premios\Frm_Premios_Modificar.Designer.cs">
+      <DependentUpon>Frm_Premios_Modificar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Procesos\Frm_Canje_Premio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Procesos\Frm_Canje_Premio.Designer.cs">
+      <DependentUpon>Frm_Canje_Premio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Procesos\Frm_Pago_Electronico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Procesos\Frm_Pago_Electronico.Designer.cs">
+      <DependentUpon>Frm_Pago_Electronico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Procesos\Frm_Procesos_Base.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Procesos\Frm_Procesos_Base.Designer.cs">
+      <DependentUpon>Frm_Procesos_Base.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Procesos\Frm_Transferencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Procesos\Frm_Transferencia.Designer.cs">
+      <DependentUpon>Frm_Transferencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reportes\Canjes\DataSet1.cs">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reportes\Canjes\DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reportes\Canjes\Frm_ReportesCanjes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Reportes\Canjes\Frm_ReportesCanjes.Designer.cs">
+      <DependentUpon>Frm_ReportesCanjes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reportes\Cuentas\DataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reportes\Cuentas\Frm_ReportesCuentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Reportes\Cuentas\Frm_ReportesCuentas.Designer.cs">
+      <DependentUpon>Frm_ReportesCuentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reportes\PagoElectronico\DataSet1.cs">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reportes\PagoElectronico\DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reportes\PagoElectronico\Frm_ReportesPagosElectronicos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Reportes\PagoElectronico\Frm_ReportesPagosElectronicos.Designer.cs">
+      <DependentUpon>Frm_ReportesPagosElectronicos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reportes\Tranferencias\DataSet1.cs">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reportes\Tranferencias\DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reportes\Tranferencias\Frm_ReportesTransferencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Reportes\Tranferencias\Frm_ReportesTransferencias.Designer.cs">
+      <DependentUpon>Frm_ReportesTransferencias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reportes\Usuarios\DataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reportes\Usuarios\Frm_ReportesUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Reportes\Usuarios\Frm_ReportesUsuarios.Designer.cs">
+      <DependentUpon>Frm_ReportesUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Servicio\Frm_Servicios_Alta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Servicio\Frm_Servicios_Alta.Designer.cs">
+      <DependentUpon>Frm_Servicios_Alta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Servicio\Frm_ABM_Servicios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Servicio\Frm_ABM_Servicios.Designer.cs">
+      <DependentUpon>Frm_ABM_Servicios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Servicio\Frm_Servicios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Servicio\Frm_Servicios.Designer.cs">
+      <DependentUpon>Frm_Servicios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Servicio\Frm_Servicios_Baja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Servicio\Frm_Servicios_Baja.Designer.cs">
+      <DependentUpon>Frm_Servicios_Baja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Servicio\Frm_Servicios_Modificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Servicio\Frm_Servicios_Modificar.Designer.cs">
+      <DependentUpon>Frm_Servicios_Modificar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tarifa\Frm_ABM_Tarifas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tarifa\Frm_ABM_Tarifas.Designer.cs">
+      <DependentUpon>Frm_ABM_Tarifas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tarifa\Frm_Tarifas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tarifa\Frm_Tarifas.Designer.cs">
+      <DependentUpon>Frm_Tarifas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tarifa\Frm_Tarifas_Alta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tarifa\Frm_Tarifas_Alta.Designer.cs">
+      <DependentUpon>Frm_Tarifas_Alta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tarifa\Frm_Tarifas_Baja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tarifa\Frm_Tarifas_Baja.Designer.cs">
+      <DependentUpon>Frm_Tarifas_Baja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tarifa\Frm_Tarifas_Modificacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tarifa\Frm_Tarifas_Modificacion.Designer.cs">
+      <DependentUpon>Frm_Tarifas_Modificacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Telefonos\Frm_ABM_Telefonos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Telefonos\Frm_ABM_Telefonos.Designer.cs">
+      <DependentUpon>Frm_ABM_Telefonos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Telefonos\Frm_Telefonos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Telefonos\Frm_Telefonos.Designer.cs">
+      <DependentUpon>Frm_Telefonos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Telefonos\Frm_Telefonos_Alta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Telefonos\Frm_Telefonos_Alta.Designer.cs">
+      <DependentUpon>Frm_Telefonos_Alta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Telefonos\Frm_Telefonos_Borrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Telefonos\Frm_Telefonos_Borrar.Designer.cs">
+      <DependentUpon>Frm_Telefonos_Borrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Telefonos\Frm_Telefonos_Modificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Telefonos\Frm_Telefonos_Modificar.Designer.cs">
+      <DependentUpon>Frm_Telefonos_Modificar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tipo de Premio\Frm_ABM_TipoDePremio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tipo de Premio\Frm_ABM_TipoDePremio.Designer.cs">
+      <DependentUpon>Frm_ABM_TipoDePremio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tipo de Premio\Frm_Tipo_Premio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tipo de Premio\Frm_Tipo_Premio.Designer.cs">
+      <DependentUpon>Frm_Tipo_Premio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tipo de Premio\Frm_Tipo_Premio_Alta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tipo de Premio\Frm_Tipo_Premio_Alta.Designer.cs">
+      <DependentUpon>Frm_Tipo_Premio_Alta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tipo de Premio\Frm_Tipo_Premio_Borrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tipo de Premio\Frm_Tipo_Premio_Borrar.Designer.cs">
+      <DependentUpon>Frm_Tipo_Premio_Borrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tipo de Premio\Frm_Tipo_Premio_Modificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tipo de Premio\Frm_Tipo_Premio_Modificar.Designer.cs">
+      <DependentUpon>Frm_Tipo_Premio_Modificar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tipos de Cuentas\Frm_ABM_TiposCuentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tipos de Cuentas\Frm_ABM_TiposCuentas.Designer.cs">
+      <DependentUpon>Frm_ABM_TiposCuentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tipos de Cuentas\Frm_TiposCuentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tipos de Cuentas\Frm_TiposCuentas.Designer.cs">
+      <DependentUpon>Frm_TiposCuentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tipos de Cuentas\Frm_Tipos_Cuentas_Alta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tipos de Cuentas\Frm_Tipos_Cuentas_Alta.Designer.cs">
+      <DependentUpon>Frm_Tipos_Cuentas_Alta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tipos de Cuentas\Frm_Tipos_Cuentas_Borrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tipos de Cuentas\Frm_Tipos_Cuentas_Borrar.Designer.cs">
+      <DependentUpon>Frm_Tipos_Cuentas_Borrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tipos de Cuentas\Frm_Tipos_Cuentas_Modificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tipos de Cuentas\Frm_Tipos_Cuentas_Modificar.Designer.cs">
+      <DependentUpon>Frm_Tipos_Cuentas_Modificar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tipos de Documentos\Frm_ABM_TiposDocumentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tipos de Documentos\Frm_ABM_TiposDocumentos.Designer.cs">
+      <DependentUpon>Frm_ABM_TiposDocumentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tipos de Documentos\Frm_Tipos_Documentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tipos de Documentos\Frm_Tipos_Documentos.Designer.cs">
+      <DependentUpon>Frm_Tipos_Documentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tipos de Documentos\Frm_Tipos_Documentos_Alta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tipos de Documentos\Frm_Tipos_Documentos_Alta.Designer.cs">
+      <DependentUpon>Frm_Tipos_Documentos_Alta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tipos de Documentos\Frm_Tipos_Documentos_Borrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tipos de Documentos\Frm_Tipos_Documentos_Borrar.Designer.cs">
+      <DependentUpon>Frm_Tipos_Documentos_Borrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tipos de Documentos\Frm_Tipos_Documentos_Modificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tipos de Documentos\Frm_Tipos_Documentos_Modificar.Designer.cs">
+      <DependentUpon>Frm_Tipos_Documentos_Modificar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tipos de Operaciones\Frm_ABM_TiposOperaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tipos de Operaciones\Frm_ABM_TiposOperaciones.Designer.cs">
+      <DependentUpon>Frm_ABM_TiposOperaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tipos de Operaciones\Frm_Tipos_Operaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tipos de Operaciones\Frm_Tipos_Operaciones.Designer.cs">
+      <DependentUpon>Frm_Tipos_Operaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tipos de Operaciones\Frm_Tipos_Operaciones_Alta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tipos de Operaciones\Frm_Tipos_Operaciones_Alta.Designer.cs">
+      <DependentUpon>Frm_Tipos_Operaciones_Alta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tipos de Operaciones\Frm_Tipos_Operaciones_Borrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tipos de Operaciones\Frm_Tipos_Operaciones_Borrar.Designer.cs">
+      <DependentUpon>Frm_Tipos_Operaciones_Borrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tipos de Operaciones\Frm_Tipos_Operaciones_Modificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tipos de Operaciones\Frm_Tipos_Operaciones_Modificar.Designer.cs">
+      <DependentUpon>Frm_Tipos_Operaciones_Modificar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Usuarios\Frm_ABM_Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Usuarios\Frm_ABM_Usuarios.Designer.cs">
+      <DependentUpon>Frm_ABM_Usuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Usuarios\Frm_Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Usuarios\Frm_Usuarios.Designer.cs">
+      <DependentUpon>Frm_Usuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Usuarios\Frm_Usuarios_Alta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Usuarios\Frm_Usuarios_Alta.Designer.cs">
+      <DependentUpon>Frm_Usuarios_Alta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Usuarios\Frm_Usuarios_Borrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Usuarios\Frm_Usuarios_Borrar.Designer.cs">
+      <DependentUpon>Frm_Usuarios_Borrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Usuarios\Frm_Usuarios_Modificaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Usuarios\Frm_Usuarios_Modificaciones.Designer.cs">
+      <DependentUpon>Frm_Usuarios_Modificaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Negocios\NE_Canjes.cs" />
+    <Compile Include="Negocios\NE_Cotizaciones.cs" />
+    <Compile Include="Negocios\NE_Cuentas.cs" />
+    <Compile Include="Negocios\NE_Monedas.cs" />
+    <Compile Include="Negocios\NE_Pago_Electronico.cs" />
+    <Compile Include="Negocios\NE_Premios.cs" />
+    <Compile Include="Negocios\NE_Servicios.cs" />
+    <Compile Include="Negocios\NE_Tarifas.cs" />
+    <Compile Include="Negocios\NE_Telefonos.cs" />
+    <Compile Include="Negocios\NE_TipoDePremio.cs" />
+    <Compile Include="Negocios\NE_Tipos_Cuentas.cs" />
+    <Compile Include="Negocios\NE_Tipos_Documentos.cs" />
+    <Compile Include="Negocios\NE_Tipos_Operaciones.cs" />
+    <Compile Include="Negocios\NE_Transferencias.cs" />
+    <Compile Include="Negocios\NE_Usuarios.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <EmbeddedResource Include="Clases\LabelText.resx">
+      <DependentUpon>LabelText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Ayuda\Frm_ayuda.resx">
+      <DependentUpon>Frm_ayuda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Cotizaciones\Frm_ABM_Cotizaciones.resx">
+      <DependentUpon>Frm_ABM_Cotizaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Cotizaciones\Frm_Cotizaciones.resx">
+      <DependentUpon>Frm_Cotizaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Cotizaciones\Frm_Cotizaciones_Alta.resx">
+      <DependentUpon>Frm_Cotizaciones_Alta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Cotizaciones\Frm_Cotizaciones_Modificar.resx">
+      <DependentUpon>Frm_Cotizaciones_Modificar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Cuentas\Frm_ABM_Cuentas.resx">
+      <DependentUpon>Frm_ABM_Cuentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Cuentas\Frm_Cuentas.resx">
+      <DependentUpon>Frm_Cuentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Cuentas\Frm_Cuentas_Alta.resx">
+      <DependentUpon>Frm_Cuentas_Alta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Cuentas\Frm_Cuentas_Borrar.resx">
+      <DependentUpon>Frm_Cuentas_Borrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Cuentas\Frm_Cuentas_Modificacion.resx">
+      <DependentUpon>Frm_Cuentas_Modificacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmBase\Frm_Base.resx">
+      <DependentUpon>Frm_Base.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmBase\Frm_Base_ABM.resx">
+      <DependentUpon>Frm_Base_ABM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Cotizaciones\Frm_Cotizaciones_Baja.resx">
+      <DependentUpon>Frm_Cotizaciones_Baja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\GraficosEstadisticos\Canjes\Frm_EstadisticasCanjes.resx">
+      <DependentUpon>Frm_EstadisticasCanjes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\GraficosEstadisticos\Canjes\RepEstadisticaCanjes01.rdlc" />
+    <EmbeddedResource Include="Formularios\GraficosEstadisticos\Canjes\RepEstadisticaCanjes02.rdlc" />
+    <EmbeddedResource Include="Formularios\GraficosEstadisticos\Canjes\RepEstadisticaComparacionCanjes.rdlc" />
+    <EmbeddedResource Include="Formularios\GraficosEstadisticos\Cuentas\Frm_EstadisticasCuentas.resx">
+      <DependentUpon>Frm_EstadisticasCuentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\GraficosEstadisticos\Cuentas\RepEstadisticaCuentasxSaldos.rdlc" />
+    <EmbeddedResource Include="Formularios\GraficosEstadisticos\Cuentas\Rep_EstadisticaCuentasxTipo.rdlc" />
+    <EmbeddedResource Include="Formularios\GraficosEstadisticos\PagosElectronicos\Frm_EstadisticasPagosElectronicos.resx">
+      <DependentUpon>Frm_EstadisticasPagosElectronicos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\GraficosEstadisticos\PagosElectronicos\RepEstadisticaComparacionPagosElectronicos.rdlc" />
+    <EmbeddedResource Include="Formularios\GraficosEstadisticos\PagosElectronicos\RepEstadisticaPagosElectronicos01.rdlc" />
+    <EmbeddedResource Include="Formularios\GraficosEstadisticos\PagosElectronicos\RepEstadisticaPagosElectronicos02.rdlc" />
+    <EmbeddedResource Include="Formularios\GraficosEstadisticos\Transferencias\Frm_Estadisticas_Transferencias.resx">
+      <DependentUpon>Frm_Estadisticas_Transferencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\GraficosEstadisticos\Transferencias\Rpt_Estadisticas_Transferencias01.rdlc" />
+    <EmbeddedResource Include="Formularios\GraficosEstadisticos\Transferencias\Rpt_Estadisticas_Transferencias02.rdlc" />
+    <EmbeddedResource Include="Formularios\GraficosEstadisticos\Transferencias\Rpt_Estadisticas_TransferenciasMonedas.rdlc" />
+    <EmbeddedResource Include="Formularios\GraficosEstadisticos\Transferencias\Rpt_Estadisticas_TransferenciasMonedas02.rdlc" />
+    <EmbeddedResource Include="Formularios\GraficosEstadisticos\Transferencias\Rpt_Estadisticas_TrasnferenciasxCuentas.rdlc" />
+    <EmbeddedResource Include="Formularios\GraficosEstadisticos\Usuarios\Frm_EstadisticasUsuarios.resx">
+      <DependentUpon>Frm_EstadisticasUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\GraficosEstadisticos\Usuarios\RepEstadisticaUsuarios.rdlc" />
+    <EmbeddedResource Include="Formularios\InicioSistema\Frm_Escritorio.resx">
+      <DependentUpon>Frm_Escritorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Monedas\Frm_ABM_Monedas.resx">
+      <DependentUpon>Frm_ABM_Monedas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Monedas\Frm_Monedas.resx">
+      <DependentUpon>Frm_Monedas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Monedas\Frm_Monedas_Alta.resx">
+      <DependentUpon>Frm_Monedas_Alta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Monedas\Frm_Monedas_Borrar.resx">
+      <DependentUpon>Frm_Monedas_Borrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Monedas\Frm_Monedas_Modificaciones.resx">
+      <DependentUpon>Frm_Monedas_Modificaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Premios\Frm_ABM_Premios.resx">
+      <DependentUpon>Frm_ABM_Premios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Premios\Frm_Premios.resx">
+      <DependentUpon>Frm_Premios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Premios\Frm_Premios_Alta.resx">
+      <DependentUpon>Frm_Premios_Alta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Premios\Frm_Premios_Borrar.resx">
+      <DependentUpon>Frm_Premios_Borrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Premios\Frm_Premios_Modificar.resx">
+      <DependentUpon>Frm_Premios_Modificar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Procesos\Frm_Canje_Premio.resx">
+      <DependentUpon>Frm_Canje_Premio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Procesos\Frm_Pago_Electronico.resx">
+      <DependentUpon>Frm_Pago_Electronico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Procesos\Frm_Procesos_Base.resx">
+      <DependentUpon>Frm_Procesos_Base.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Procesos\Frm_Transferencia.resx">
+      <DependentUpon>Frm_Transferencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Reportes\Canjes\Frm_ReportesCanjes.resx">
+      <DependentUpon>Frm_ReportesCanjes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Reportes\Canjes\Rprt_Canjes.rdlc" />
+    <EmbeddedResource Include="Formularios\Reportes\Canjes\Rprt_Premio.rdlc" />
+    <EmbeddedResource Include="Formularios\Reportes\Cuentas\Frm_ReportesCuentas.resx">
+      <DependentUpon>Frm_ReportesCuentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Reportes\Cuentas\Rprt_Cuentas.rdlc" />
+    <EmbeddedResource Include="Formularios\Reportes\Cuentas\Rprt_CuentasxSaldos.rdlc" />
+    <EmbeddedResource Include="Formularios\Reportes\PagoElectronico\Frm_ReportesPagosElectronicos.resx">
+      <DependentUpon>Frm_ReportesPagosElectronicos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Reportes\PagoElectronico\Rprt_PagosElectronicos.rdlc" />
+    <EmbeddedResource Include="Formularios\Reportes\PagoElectronico\Rprt_ReportesPagosElectronicos01.rdlc" />
+    <EmbeddedResource Include="Formularios\Reportes\Tranferencias\Frm_ReportesTransferencias.resx">
+      <DependentUpon>Frm_ReportesTransferencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Reportes\Tranferencias\Rpt_Transferencias.rdlc" />
+    <EmbeddedResource Include="Formularios\Reportes\Tranferencias\Rpt_TransferenciasxCuentas.rdlc" />
+    <EmbeddedResource Include="Formularios\Reportes\Tranferencias\Rpt_TransferenciaxFecha.rdlc" />
+    <EmbeddedResource Include="Formularios\Reportes\Usuarios\Rprt_Usuarios.rdlc" />
+    <EmbeddedResource Include="Formularios\Servicio\Frm_ABM_Servicios.resx">
+      <DependentUpon>Frm_ABM_Servicios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Servicio\Frm_Servicios.resx">
+      <DependentUpon>Frm_Servicios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Servicio\Frm_Servicios_Alta.resx">
+      <DependentUpon>Frm_Servicios_Alta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Servicio\Frm_Servicios_Baja.resx">
+      <DependentUpon>Frm_Servicios_Baja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Servicio\Frm_Servicios_Modificar.resx">
+      <DependentUpon>Frm_Servicios_Modificar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tarifa\Frm_ABM_Tarifas.resx">
+      <DependentUpon>Frm_ABM_Tarifas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tarifa\Frm_Tarifas.resx">
+      <DependentUpon>Frm_Tarifas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tarifa\Frm_Tarifas_Alta.resx">
+      <DependentUpon>Frm_Tarifas_Alta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tarifa\Frm_Tarifas_Baja.resx">
+      <DependentUpon>Frm_Tarifas_Baja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tarifa\Frm_Tarifas_Modificacion.resx">
+      <DependentUpon>Frm_Tarifas_Modificacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Telefonos\Frm_ABM_Telefonos.resx">
+      <DependentUpon>Frm_ABM_Telefonos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Telefonos\Frm_Telefonos.resx">
+      <DependentUpon>Frm_Telefonos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Telefonos\Frm_Telefonos_Alta.resx">
+      <DependentUpon>Frm_Telefonos_Alta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Telefonos\Frm_Telefonos_Borrar.resx">
+      <DependentUpon>Frm_Telefonos_Borrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Telefonos\Frm_Telefonos_Modificar.resx">
+      <DependentUpon>Frm_Telefonos_Modificar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tipo de Premio\Frm_ABM_TipoDePremio.resx">
+      <DependentUpon>Frm_ABM_TipoDePremio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tipo de Premio\Frm_Tipo_Premio.resx">
+      <DependentUpon>Frm_Tipo_Premio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tipo de Premio\Frm_Tipo_Premio_Alta.resx">
+      <DependentUpon>Frm_Tipo_Premio_Alta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tipo de Premio\Frm_Tipo_Premio_Borrar.resx">
+      <DependentUpon>Frm_Tipo_Premio_Borrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tipo de Premio\Frm_Tipo_Premio_Modificar.resx">
+      <DependentUpon>Frm_Tipo_Premio_Modificar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tipos de Cuentas\Frm_ABM_TiposCuentas.resx">
+      <DependentUpon>Frm_ABM_TiposCuentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tipos de Cuentas\Frm_TiposCuentas.resx">
+      <DependentUpon>Frm_TiposCuentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tipos de Cuentas\Frm_Tipos_Cuentas_Alta.resx">
+      <DependentUpon>Frm_Tipos_Cuentas_Alta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tipos de Cuentas\Frm_Tipos_Cuentas_Borrar.resx">
+      <DependentUpon>Frm_Tipos_Cuentas_Borrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tipos de Cuentas\Frm_Tipos_Cuentas_Modificar.resx">
+      <DependentUpon>Frm_Tipos_Cuentas_Modificar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tipos de Documentos\Frm_ABM_TiposDocumentos.resx">
+      <DependentUpon>Frm_ABM_TiposDocumentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tipos de Documentos\Frm_Tipos_Documentos.resx">
+      <DependentUpon>Frm_Tipos_Documentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tipos de Documentos\Frm_Tipos_Documentos_Alta.resx">
+      <DependentUpon>Frm_Tipos_Documentos_Alta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tipos de Documentos\Frm_Tipos_Documentos_Borrar.resx">
+      <DependentUpon>Frm_Tipos_Documentos_Borrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tipos de Documentos\Frm_Tipos_Documentos_Modificar.resx">
+      <DependentUpon>Frm_Tipos_Documentos_Modificar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tipos de Operaciones\Frm_ABM_TiposOperaciones.resx">
+      <DependentUpon>Frm_ABM_TiposOperaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tipos de Operaciones\Frm_Tipos_Operaciones.resx">
+      <DependentUpon>Frm_Tipos_Operaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tipos de Operaciones\Frm_Tipos_Operaciones_Alta.resx">
+      <DependentUpon>Frm_Tipos_Operaciones_Alta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tipos de Operaciones\Frm_Tipos_Operaciones_Borrar.resx">
+      <DependentUpon>Frm_Tipos_Operaciones_Borrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tipos de Operaciones\Frm_Tipos_Operaciones_Modificar.resx">
+      <DependentUpon>Frm_Tipos_Operaciones_Modificar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Usuarios\Frm_ABM_Usuarios.resx">
+      <DependentUpon>Frm_ABM_Usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Usuarios\Frm_Usuarios.resx">
+      <DependentUpon>Frm_Usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Usuarios\Frm_Usuarios_Alta.resx">
+      <DependentUpon>Frm_Usuarios_Alta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Usuarios\Frm_Usuarios_Borrar.resx">
+      <DependentUpon>Frm_Usuarios_Borrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Usuarios\Frm_Usuarios_Modificaciones.resx">
+      <DependentUpon>Frm_Usuarios_Modificaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Formularios\GraficosEstadisticos\Canjes\Graf_Estadisticos_Canjes.xsc">
+      <DependentUpon>Graf_Estadisticos_Canjes.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\GraficosEstadisticos\Canjes\Graf_Estadisticos_Canjes.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Graf_Estadisticos_Canjes.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Formularios\GraficosEstadisticos\Canjes\Graf_Estadisticos_Canjes.xss">
+      <DependentUpon>Graf_Estadisticos_Canjes.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\GraficosEstadisticos\Cuentas\Graf_Estadisticos_Cuentas.xsc">
+      <DependentUpon>Graf_Estadisticos_Cuentas.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\GraficosEstadisticos\Cuentas\Graf_Estadisticos_Cuentas.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Graf_Estadisticos_Cuentas.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Formularios\GraficosEstadisticos\Cuentas\Graf_Estadisticos_Cuentas.xss">
+      <DependentUpon>Graf_Estadisticos_Cuentas.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\GraficosEstadisticos\PagosElectronicos\Graf_EstadisticosPagosElectronicos.xsc">
+      <DependentUpon>Graf_EstadisticosPagosElectronicos.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\GraficosEstadisticos\PagosElectronicos\Graf_EstadisticosPagosElectronicos.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Graf_EstadisticosPagosElectronicos.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Formularios\GraficosEstadisticos\PagosElectronicos\Graf_EstadisticosPagosElectronicos.xss">
+      <DependentUpon>Graf_EstadisticosPagosElectronicos.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\GraficosEstadisticos\Transferencias\Graf_Estadisticos_Transferencias.xsc">
+      <DependentUpon>Graf_Estadisticos_Transferencias.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\GraficosEstadisticos\Transferencias\Graf_Estadisticos_Transferencias.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Graf_Estadisticos_Transferencias.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Formularios\GraficosEstadisticos\Transferencias\Graf_Estadisticos_Transferencias.xss">
+      <DependentUpon>Graf_Estadisticos_Transferencias.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\GraficosEstadisticos\Usuarios\Graf_Estadisticos_Usuarios.xsc">
+      <DependentUpon>Graf_Estadisticos_Usuarios.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\GraficosEstadisticos\Usuarios\Graf_Estadisticos_Usuarios.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Graf_Estadisticos_Usuarios1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Formularios\GraficosEstadisticos\Usuarios\Graf_Estadisticos_Usuarios.xss">
+      <DependentUpon>Graf_Estadisticos_Usuarios.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\Reportes\Canjes\DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\Reportes\Canjes\DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Formularios\Reportes\Canjes\DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\Reportes\Cuentas\DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\Reportes\Cuentas\DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Formularios\Reportes\Cuentas\DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\Reportes\PagoElectronico\DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\Reportes\PagoElectronico\DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Formularios\Reportes\PagoElectronico\DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\Reportes\Tranferencias\DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\Reportes\Tranferencias\DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Formularios\Reportes\Tranferencias\DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\Reportes\Usuarios\DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\Reportes\Usuarios\DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Formularios\Reportes\Usuarios\DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-mostrar-propiedad-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-mostrar-propiedad-50 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FAQ Question and Answer Social Media Business Instagram Post Template.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
