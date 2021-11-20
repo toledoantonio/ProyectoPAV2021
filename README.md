@@ -4,6 +4,8 @@
 
 Repositorio utilizado para la realizacion del Trabajo Práctico Integrador
 
+Lenguaje: C# - Desarrollos en la plataforma .NET
+
 ### Curso: 3K3
 
 ### Grupo: 4
