@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Graf_Estadisticos_Cuentas" targetNamespace="http://tempuri.org/Graf_Estadisticos_Cuentas.xsd" xmlns:mstns="http://tempuri.org/Graf_Estadisticos_Cuentas.xsd" xmlns="http://tempuri.org/Graf_Estadisticos_Cuentas.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Graf_Estadisticos_Cuentas" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Graf_Estadisticos_Cuentas" msprop:Generator_UserDSName="Graf_Estadisticos_Cuentas">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="GECxS" msprop:Generator_TableClassName="GECxSDataTable" msprop:Generator_TableVarName="tableGECxS" msprop:Generator_RowChangedName="GECxSRowChanged" msprop:Generator_TablePropName="GECxS" msprop:Generator_RowDeletingName="GECxSRowDeleting" msprop:Generator_RowChangingName="GECxSRowChanging" msprop:Generator_RowEvHandlerName="GECxSRowChangeEventHandler" msprop:Generator_RowDeletedName="GECxSRowDeleted" msprop:Generator_RowClassName="GECxSRow" msprop:Generator_UserTableName="GECxS" msprop:Generator_RowEvArgName="GECxSRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nombre" msprop:Generator_ColumnVarNameInTable="columnnombre" msprop:Generator_ColumnPropNameInRow="nombre" msprop:Generator_ColumnPropNameInTable="nombreColumn" msprop:Generator_UserColumnName="nombre" type="xs:string" minOccurs="0" />
+              <xs:element name="cuantos_cuentas" msprop:Generator_ColumnVarNameInTable="columncuantos_cuentas" msprop:Generator_ColumnPropNameInRow="cuantos_cuentas" msprop:Generator_ColumnPropNameInTable="cuantos_cuentasColumn" msprop:Generator_UserColumnName="cuantos_cuentas" type="xs:short" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="GEC02" msprop:Generator_TableClassName="GEC02DataTable" msprop:Generator_TableVarName="tableGEC02" msprop:Generator_TablePropName="GEC02" msprop:Generator_RowDeletingName="GEC02RowDeleting" msprop:Generator_RowChangingName="GEC02RowChanging" msprop:Generator_RowEvHandlerName="GEC02RowChangeEventHandler" msprop:Generator_RowDeletedName="GEC02RowDeleted" msprop:Generator_UserTableName="GEC02" msprop:Generator_RowChangedName="GEC02RowChanged" msprop:Generator_RowEvArgName="GEC02RowChangeEvent" msprop:Generator_RowClassName="GEC02Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nombre" msprop:Generator_ColumnVarNameInTable="columnnombre" msprop:Generator_ColumnPropNameInRow="nombre" msprop:Generator_ColumnPropNameInTable="nombreColumn" msprop:Generator_UserColumnName="nombre" type="xs:string" minOccurs="0" />
+              <xs:element name="cuantos_cuentas" msprop:Generator_ColumnVarNameInTable="columncuantos_cuentas" msprop:Generator_ColumnPropNameInRow="cuantos_cuentas" msprop:Generator_ColumnPropNameInTable="cuantos_cuentasColumn" msprop:Generator_UserColumnName="cuantos_cuentas" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

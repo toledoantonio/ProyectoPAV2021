@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Graf_Estadisticos_Canjes" targetNamespace="http://tempuri.org/Graf_Estadisticos_Canjes.xsd" xmlns:mstns="http://tempuri.org/Graf_Estadisticos_Canjes.xsd" xmlns="http://tempuri.org/Graf_Estadisticos_Canjes.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Graf_Estadisticos_Canjes" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Graf_Estadisticos_Canjes" msprop:Generator_UserDSName="Graf_Estadisticos_Canjes">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="GEC01" msprop:Generator_TableClassName="GEC01DataTable" msprop:Generator_TableVarName="tableGEC01" msprop:Generator_TablePropName="GEC01" msprop:Generator_RowDeletingName="GEC01RowDeleting" msprop:Generator_RowChangingName="GEC01RowChanging" msprop:Generator_RowEvHandlerName="GEC01RowChangeEventHandler" msprop:Generator_RowDeletedName="GEC01RowDeleted" msprop:Generator_UserTableName="GEC01" msprop:Generator_RowChangedName="GEC01RowChanged" msprop:Generator_RowEvArgName="GEC01RowChangeEvent" msprop:Generator_RowClassName="GEC01Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="descripcion" msprop:Generator_ColumnVarNameInTable="columndescripcion" msprop:Generator_ColumnPropNameInRow="descripcion" msprop:Generator_ColumnPropNameInTable="descripcionColumn" msprop:Generator_UserColumnName="descripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="cuantos_canjes" msprop:Generator_ColumnVarNameInTable="columncuantos_canjes" msprop:Generator_ColumnPropNameInRow="cuantos_canjes" msprop:Generator_ColumnPropNameInTable="cuantos_canjesColumn" msprop:Generator_UserColumnName="cuantos_canjes" type="xs:int" minOccurs="0" />
+              <xs:element name="puntos_totales" msprop:Generator_ColumnVarNameInTable="columnpuntos_totales" msprop:Generator_ColumnPropNameInRow="puntos_totales" msprop:Generator_ColumnPropNameInTable="puntos_totalesColumn" msprop:Generator_UserColumnName="puntos_totales" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="GEC02" msprop:Generator_TableClassName="GEC02DataTable" msprop:Generator_TableVarName="tableGEC02" msprop:Generator_TablePropName="GEC02" msprop:Generator_RowDeletingName="GEC02RowDeleting" msprop:Generator_RowChangingName="GEC02RowChanging" msprop:Generator_RowEvHandlerName="GEC02RowChangeEventHandler" msprop:Generator_RowDeletedName="GEC02RowDeleted" msprop:Generator_UserTableName="GEC02" msprop:Generator_RowChangedName="GEC02RowChanged" msprop:Generator_RowEvArgName="GEC02RowChangeEvent" msprop:Generator_RowClassName="GEC02Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nombre" msprop:Generator_ColumnVarNameInTable="columnnombre" msprop:Generator_ColumnPropNameInRow="nombre" msprop:Generator_ColumnPropNameInTable="nombreColumn" msprop:Generator_UserColumnName="nombre" type="xs:string" minOccurs="0" />
+              <xs:element name="cuantos_canjes" msprop:Generator_ColumnVarNameInTable="columncuantos_canjes" msprop:Generator_ColumnPropNameInRow="cuantos_canjes" msprop:Generator_ColumnPropNameInTable="cuantos_canjesColumn" msprop:Generator_UserColumnName="cuantos_canjes" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

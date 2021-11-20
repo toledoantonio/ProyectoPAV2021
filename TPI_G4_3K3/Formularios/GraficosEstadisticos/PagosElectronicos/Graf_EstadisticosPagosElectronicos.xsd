@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Graf_EstadisticosPagosElectronicos" targetNamespace="http://tempuri.org/Graf_EstadisticosPagosElectronicos.xsd" xmlns:mstns="http://tempuri.org/Graf_EstadisticosPagosElectronicos.xsd" xmlns="http://tempuri.org/Graf_EstadisticosPagosElectronicos.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Graf_EstadisticosPagosElectronicos" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Graf_EstadisticosPagosElectronicos" msprop:Generator_UserDSName="Graf_EstadisticosPagosElectronicos">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="GEPE01" msprop:Generator_TableClassName="GEPE01DataTable" msprop:Generator_TableVarName="tableGEPE01" msprop:Generator_RowChangedName="GEPE01RowChanged" msprop:Generator_TablePropName="GEPE01" msprop:Generator_RowDeletingName="GEPE01RowDeleting" msprop:Generator_RowChangingName="GEPE01RowChanging" msprop:Generator_RowEvHandlerName="GEPE01RowChangeEventHandler" msprop:Generator_RowDeletedName="GEPE01RowDeleted" msprop:Generator_RowClassName="GEPE01Row" msprop:Generator_UserTableName="GEPE01" msprop:Generator_RowEvArgName="GEPE01RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="descripcion" msprop:Generator_ColumnVarNameInTable="columndescripcion" msprop:Generator_ColumnPropNameInRow="descripcion" msprop:Generator_ColumnPropNameInTable="descripcionColumn" msprop:Generator_UserColumnName="descripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="cuantos_pagos" msprop:Generator_ColumnVarNameInTable="columncuantos_pagos" msprop:Generator_ColumnPropNameInRow="cuantos_pagos" msprop:Generator_ColumnPropNameInTable="cuantos_pagosColumn" msprop:Generator_UserColumnName="cuantos_pagos" type="xs:int" minOccurs="0" />
+              <xs:element name="importe_total" msprop:Generator_ColumnVarNameInTable="columnimporte_total" msprop:Generator_ColumnPropNameInRow="importe_total" msprop:Generator_ColumnPropNameInTable="importe_totalColumn" msprop:Generator_UserColumnName="importe_total" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="GEPE02" msprop:Generator_TableClassName="GEPE02DataTable" msprop:Generator_TableVarName="tableGEPE02" msprop:Generator_TablePropName="GEPE02" msprop:Generator_RowDeletingName="GEPE02RowDeleting" msprop:Generator_RowChangingName="GEPE02RowChanging" msprop:Generator_RowEvHandlerName="GEPE02RowChangeEventHandler" msprop:Generator_RowDeletedName="GEPE02RowDeleted" msprop:Generator_UserTableName="GEPE02" msprop:Generator_RowChangedName="GEPE02RowChanged" msprop:Generator_RowEvArgName="GEPE02RowChangeEvent" msprop:Generator_RowClassName="GEPE02Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nombre" msprop:Generator_ColumnVarNameInTable="columnnombre" msprop:Generator_ColumnPropNameInRow="nombre" msprop:Generator_ColumnPropNameInTable="nombreColumn" msprop:Generator_UserColumnName="nombre" type="xs:string" minOccurs="0" />
+              <xs:element name="cuantos_servicios" msprop:Generator_ColumnVarNameInTable="columncuantos_servicios" msprop:Generator_ColumnPropNameInRow="cuantos_servicios" msprop:Generator_ColumnPropNameInTable="cuantos_serviciosColumn" msprop:Generator_UserColumnName="cuantos_servicios" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Graf_Estadisticos_Transferencias" targetNamespace="http://tempuri.org/Graf_Estadisticos_Transferencias.xsd" xmlns:mstns="http://tempuri.org/Graf_Estadisticos_Transferencias.xsd" xmlns="http://tempuri.org/Graf_Estadisticos_Transferencias.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Graf_Estadisticos_Transferencias" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Graf_Estadisticos_Transferencias" msprop:Generator_UserDSName="Graf_Estadisticos_Transferencias">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="GE_TransferenciasMonedas" msprop:Generator_TableClassName="GE_TransferenciasMonedasDataTable" msprop:Generator_TableVarName="tableGE_TransferenciasMonedas" msprop:Generator_RowChangedName="GE_TransferenciasMonedasRowChanged" msprop:Generator_TablePropName="GE_TransferenciasMonedas" msprop:Generator_RowDeletingName="GE_TransferenciasMonedasRowDeleting" msprop:Generator_RowChangingName="GE_TransferenciasMonedasRowChanging" msprop:Generator_RowEvHandlerName="GE_TransferenciasMonedasRowChangeEventHandler" msprop:Generator_RowDeletedName="GE_TransferenciasMonedasRowDeleted" msprop:Generator_RowClassName="GE_TransferenciasMonedasRow" msprop:Generator_UserTableName="GE_TransferenciasMonedas" msprop:Generator_RowEvArgName="GE_TransferenciasMonedasRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="descripcion" msprop:Generator_ColumnVarNameInTable="columndescripcion" msprop:Generator_ColumnPropNameInRow="descripcion" msprop:Generator_ColumnPropNameInTable="descripcionColumn" msprop:Generator_UserColumnName="descripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="cantidad" msprop:Generator_ColumnVarNameInTable="columncantidad" msprop:Generator_ColumnPropNameInRow="cantidad" msprop:Generator_ColumnPropNameInTable="cantidadColumn" msprop:Generator_UserColumnName="cantidad" type="xs:int" minOccurs="0" />
+              <xs:element name="cantidad_transferida" msprop:Generator_ColumnVarNameInTable="columncantidad_transferida" msprop:Generator_ColumnPropNameInRow="cantidad_transferida" msprop:Generator_ColumnPropNameInTable="cantidad_transferidaColumn" msprop:Generator_UserColumnName="cantidad_transferida" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="GE_TransferenciasxCuentas" msprop:Generator_TableClassName="GE_TransferenciasxCuentasDataTable" msprop:Generator_TableVarName="tableGE_TransferenciasxCuentas" msprop:Generator_TablePropName="GE_TransferenciasxCuentas" msprop:Generator_RowDeletingName="GE_TransferenciasxCuentasRowDeleting" msprop:Generator_RowChangingName="GE_TransferenciasxCuentasRowChanging" msprop:Generator_RowEvHandlerName="GE_TransferenciasxCuentasRowChangeEventHandler" msprop:Generator_RowDeletedName="GE_TransferenciasxCuentasRowDeleted" msprop:Generator_UserTableName="GE_TransferenciasxCuentas" msprop:Generator_RowChangedName="GE_TransferenciasxCuentasRowChanged" msprop:Generator_RowEvArgName="GE_TransferenciasxCuentasRowChangeEvent" msprop:Generator_RowClassName="GE_TransferenciasxCuentasRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="fecha" msprop:Generator_ColumnVarNameInTable="columnfecha" msprop:Generator_ColumnPropNameInRow="fecha" msprop:Generator_ColumnPropNameInTable="fechaColumn" msprop:Generator_UserColumnName="fecha" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="cuantas_fecha" msprop:Generator_ColumnVarNameInTable="columncuantas_fecha" msprop:Generator_ColumnPropNameInRow="cuantas_fecha" msprop:Generator_ColumnPropNameInTable="cuantas_fechaColumn" msprop:Generator_UserColumnName="cuantas_fecha" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="GE_TransferenciasMonedas01" msprop:Generator_TableClassName="GE_TransferenciasMonedas01DataTable" msprop:Generator_TableVarName="tableGE_TransferenciasMonedas01" msprop:Generator_TablePropName="GE_TransferenciasMonedas01" msprop:Generator_RowDeletingName="GE_TransferenciasMonedas01RowDeleting" msprop:Generator_RowChangingName="GE_TransferenciasMonedas01RowChanging" msprop:Generator_RowEvHandlerName="GE_TransferenciasMonedas01RowChangeEventHandler" msprop:Generator_RowDeletedName="GE_TransferenciasMonedas01RowDeleted" msprop:Generator_UserTableName="GE_TransferenciasMonedas01" msprop:Generator_RowChangedName="GE_TransferenciasMonedas01RowChanged" msprop:Generator_RowEvArgName="GE_TransferenciasMonedas01RowChangeEvent" msprop:Generator_RowClassName="GE_TransferenciasMonedas01Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="descripcion" msprop:Generator_ColumnVarNameInTable="columndescripcion" msprop:Generator_ColumnPropNameInRow="descripcion" msprop:Generator_ColumnPropNameInTable="descripcionColumn" msprop:Generator_UserColumnName="descripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="cantidad" msprop:Generator_ColumnVarNameInTable="columncantidad" msprop:Generator_ColumnPropNameInRow="cantidad" msprop:Generator_ColumnPropNameInTable="cantidadColumn" msprop:Generator_UserColumnName="cantidad" type="xs:int" minOccurs="0" />
+              <xs:element name="cantidad_transferida" msprop:Generator_ColumnVarNameInTable="columncantidad_transferida" msprop:Generator_ColumnPropNameInRow="cantidad_transferida" msprop:Generator_ColumnPropNameInTable="cantidad_transferidaColumn" msprop:Generator_UserColumnName="cantidad_transferida" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
