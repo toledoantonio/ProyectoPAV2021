@@ -25,7 +25,7 @@ El sistema contempla:
   - ABM de tablas núcleo del sistema.
   - Autenticación básica.
   - ABM de usuarios y perfiles/permisos.
-  - Manejo de transacciones (*).
+  - Manejo de transacciones.
   - Manejo de errores.
   - Gestión dinámica de menúes.
   - Programación en capas.
